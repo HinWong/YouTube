@@ -17,6 +17,8 @@
 		4E3C779E24AFD12800B217F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C779D24AFD12800B217F2 /* Constants.swift */; };
 		4E3C77A024AFEC9E00B217F2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C779F24AFEC9E00B217F2 /* Video.swift */; };
 		4E3C77A224AFED2300B217F2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C77A124AFED2300B217F2 /* Model.swift */; };
+		4E8AF8F524B3B15E00C43DB4 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8AF8F424B3B15E00C43DB4 /* VideoTableViewCell.swift */; };
+		4E8AF8FC24B3CE1800C43DB4 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8AF8FB24B3CE1800C43DB4 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4E3C779D24AFD12800B217F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E3C779F24AFEC9E00B217F2 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		4E3C77A124AFED2300B217F2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4E8AF8F424B3B15E00C43DB4 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		4E8AF8FB24B3CE1800C43DB4 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +70,59 @@
 			children = (
 				4E3C778924AFC36900B217F2 /* AppDelegate.swift */,
 				4E3C778B24AFC36900B217F2 /* SceneDelegate.swift */,
-				4E3C778D24AFC36900B217F2 /* ViewController.swift */,
-				4E3C778F24AFC36900B217F2 /* Main.storyboard */,
+				4E8AF8F924B3B20300C43DB4 /* View Controllers */,
+				4E8AF8F724B3B1E500C43DB4 /* Storyboards */,
 				4E3C779224AFC36C00B217F2 /* Assets.xcassets */,
-				4E3C779424AFC36C00B217F2 /* LaunchScreen.storyboard */,
 				4E3C779724AFC36C00B217F2 /* Info.plist */,
+				4E8AF8F824B3B1F500C43DB4 /* Model */,
+				4E8AF8F624B3B1BA00C43DB4 /* Helpers */,
+				4E8AF8FA24B3B21000C43DB4 /* Views */,
+			);
+			path = "YouTube App";
+			sourceTree = "<group>";
+		};
+		4E8AF8F624B3B1BA00C43DB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
 				4E3C779D24AFD12800B217F2 /* Constants.swift */,
+				4E8AF8FB24B3CE1800C43DB4 /* CacheManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4E8AF8F724B3B1E500C43DB4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C778F24AFC36900B217F2 /* Main.storyboard */,
+				4E3C779424AFC36C00B217F2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4E8AF8F824B3B1F500C43DB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				4E3C779F24AFEC9E00B217F2 /* Video.swift */,
 				4E3C77A124AFED2300B217F2 /* Model.swift */,
 				4E3BE59524B0F0DF0020033E /* Response.swift */,
 			);
-			path = "YouTube App";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E8AF8F924B3B20300C43DB4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C778D24AFC36900B217F2 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4E8AF8FA24B3B21000C43DB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E8AF8F424B3B15E00C43DB4 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3C778E24AFC36900B217F2 /* ViewController.swift in Sources */,
+				4E8AF8FC24B3CE1800C43DB4 /* CacheManager.swift in Sources */,
 				4E3C778A24AFC36900B217F2 /* AppDelegate.swift in Sources */,
 				4E3C778C24AFC36900B217F2 /* SceneDelegate.swift in Sources */,
 				4E3C77A224AFED2300B217F2 /* Model.swift in Sources */,
 				4E3C779E24AFD12800B217F2 /* Constants.swift in Sources */,
+				4E8AF8F524B3B15E00C43DB4 /* VideoTableViewCell.swift in Sources */,
 				4E3C77A024AFEC9E00B217F2 /* Video.swift in Sources */,
 				4E3BE59624B0F0DF0020033E /* Response.swift in Sources */,
 			);
